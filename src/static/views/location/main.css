@@ -1,0 +1,76 @@
+
+.mol-view-container {
+  position: absolute;
+  top: 0; left:0; right:0; bottom: 0;
+  display: flex;
+  display: -webkit-flex;
+  min-height: 100vh;
+  -webkit-flex-direction: column;;
+  flex-direction: column;
+  overflow:hidden;
+}
+
+.location-container {
+  display: flex;
+  display: -webkit-flex;
+  flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+.location-container .angular-leaflet-map {
+  flex: 1;
+  -webkit-flex: 1;
+}
+
+.location-container .mol-location-map {
+  display: flex;
+  display: -webkit-flex;
+  flex: 1 1;
+  -webkit-flex: 1 1;
+  overflow: hidden;
+}
+
+.location-container .drawer  {
+  min-width: 0px;
+  border-left: 2pt solid gray;
+  display: flex;
+  display: -webkit-flex;
+  flex: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+
+.location-container .drawer .column {
+  /*min-height: -webkit-min-content;*/
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 15px;
+}
+
+.location-container footer {
+  /*flex: 0 1 40px;*/
+}
+
+.location-container .panel-body-table  {
+  /*overflow-y: scroll;
+  max-height: 70vh;*/
+}
+.location-container .desc  {
+  max-height: 460px;
+  overflow-y: scroll;
+}
+.location-container mol-loading-indicator {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+}
